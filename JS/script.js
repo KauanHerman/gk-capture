@@ -19,17 +19,31 @@ const cursorPremium = document.querySelector(".cursor-premium");
 const prefereMovimentoReduzido =
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-if (introSite && !prefereMovimentoReduzido) {
+if (introSite) {
 
-    document.body.style.overflow = "hidden";
+    if (prefereMovimentoReduzido) {
+        introSite.remove();
+    } else {
+        document.body.style.overflow = "hidden";
 
-    window.setTimeout(() => {
+        const encerrarIntro = () => {
+            introSite.classList.add("sair");
+            document.body.style.overflow = "";
 
-        introSite.classList.add("sair");
-        document.body.style.overflow = "";
+            window.setTimeout(() => {
+                introSite.remove();
+            }, 650);
+        };
 
-    }, 1450);
+        window.setTimeout(encerrarIntro, 1450);
 
+        window.setTimeout(() => {
+            if (document.body.contains(introSite)) {
+                introSite.remove();
+                document.body.style.overflow = "";
+            }
+        }, 2600);
+    }
 }
 
 

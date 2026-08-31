@@ -1,442 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="by.Guilhermefilms - Portfólio profissional de Guilherme Kauê, com fotografias e vídeos institucionais que valorizam pessoas, marcas e negócios.">
-
-    <meta property="og:title" content="by.Guilhermefilms">
-    <meta property="og:description" content="Fotografia • Filmes • Histórias">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="imagens/capa.jpg">
-
-    <title>by.Guilhermefilms</title>
-
-    <link rel="icon" type="image/png" href="imagens/favicon.png">
-    <link rel="shortcut icon" type="image/png" href="imagens/favicon.png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="by.Guilhermefilms — fotografia, histórias e conteúdo visual por Guilherme Kauê.">
+  <meta property="og:title" content="by.Guilhermefilms">
+  <meta property="og:description" content="Fotografia • Histórias">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagens/capa.jpg">
+  <title>by.Guilhermefilms</title>
+  <link rel="icon" type="image/png" href="imagens/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
-
 <body>
+  <div class="intro-site" aria-hidden="true">
+    <div class="intro-site-conteudo">
+      <span class="intro-marca">by.Guilhermefilms</span>
+      <span class="intro-linha"></span>
+      <span class="intro-frase">FOTOGRAFIA • HISTÓRIAS</span>
+    </div>
+  </div>
 
-    <div class="intro-site" aria-hidden="true">
-        <div class="intro-site-conteudo">
-            <span class="intro-marca">by.Guilhermefilms</span>
-            <span class="intro-linha"></span>
-            <span class="intro-frase">FOTOGRAFIA • FILMES • HISTÓRIAS</span>
+  <div class="cursor-premium" aria-hidden="true"><span>VER</span></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="logo" href="#inicio">by.Guilhermefilms</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal"><span></span><span></span></button>
+      <ul class="menu" id="menu-principal">
+        <li><a href="#portfolio">Trabalhos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-conteudo reveal">
+        <span class="eyebrow">FOTOGRAFIA &nbsp; • &nbsp; HISTÓRIAS</span>
+        <h1>UM NOVO<br>OLHAR SOBRE<br>CADA <em>HISTÓRIA.</em></h1>
+        <div class="hero-meta"><span></span><p>Curitiba — Brasil</p></div>
+        <a class="hero-link" href="#portfolio">EXPLORAR TRABALHOS <b>↓</b></a>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio secao">
+      <div class="portfolio-topo">
+        <div class="section-heading reveal">
+          <div class="section-number"><span>01</span><i></i></div>
+          <h2>TRABALHOS<br>SELECIONADOS</h2>
+          <p>Cada imagem nasce de um encontro, de uma luz e de um instante que não acontece duas vezes.</p>
         </div>
-    </div>
-
-    <div class="cursor-premium" aria-hidden="true">
-        <span>VER</span>
-    </div>
-
-    <div class="scroll-progress" aria-hidden="true"></div>
-
-    <header class="header">
-        <nav class="nav" aria-label="Navegação principal">
-
-            <a href="#inicio" class="logo">by.Guilhermefilms</a>
-
-            <button
-                class="menu-toggle"
-                type="button"
-                aria-label="Abrir menu"
-                aria-expanded="false"
-                aria-controls="menu-principal"
-            >
-                <span></span>
-                <span></span>
-            </button>
-
-            <ul class="menu" id="menu-principal">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-
-        </nav>
-    </header>
-
-    <main>
-
-        <section id="inicio" class="hero">
-
-            <div class="hero-conteudo reveal hero-reveal">
-
-                <span class="hero-subtitulo">
-                    FOTOGRAFIA • FILMES • HISTÓRIAS
-                </span>
-
-                <h1>
-                    Um novo olhar<br>
-                    sobre cada história.
-                </h1>
-
-                <p>
-                    Fotografias e filmes que valorizam pessoas,
-                    marcas, negócios e momentos que merecem permanecer.
-                </p>
-
-                <div class="hero-botoes">
-                    <a href="#portfolio" class="btn btn-transparente">Ver Portfólio</a>
-                    <a href="#contato" class="btn btn-branco">Solicitar orçamento</a>
-                </div>
-
-            </div>
-
-            <a href="#portfolio" class="hero-scroll">
-                <span>EXPLORE</span>
-                <span class="scroll-arrow">↓</span>
-            </a>
-
-        </section>
-
-        <section id="portfolio" class="secao portfolio">
-
-            <div class="titulo-secao reveal">
-                <span>HISTÓRIAS ATRAVÉS DE IMAGENS</span>
-                <h2>Portfólio</h2>
-                <p>
-                    Cada trabalho nasce de um olhar atento à luz,
-                    aos detalhes e às histórias que existem em
-                    pessoas, lugares e marcas.
-                </p>
-            </div>
-
-
-            <div class="portfolio-filtros reveal" aria-label="Filtros do portfólio">
-                <button class="filtro-btn ativo" type="button" data-filter="todos">Todos</button>
-                <button class="filtro-btn" type="button" data-filter="olhares">Olhares</button>
-                <button class="filtro-btn" type="button" data-filter="detalhes">Detalhes</button>
-                <button class="filtro-btn" type="button" data-filter="perspectivas">Perspectivas</button>
-                <button class="filtro-btn" type="button" data-filter="cenarios">Cenários</button>
-                <button class="filtro-btn" type="button" data-filter="momentos">Momentos</button>
-            </div>
-
-            <div class="galeria">
-
-                <article class="foto-card reveal" tabindex="0" role="button" aria-label="Ampliar fotografia 1" data-category="olhares">
-                    <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-1.jpeg" alt="Fotografia urbana noturna">
-                    <div class="foto-overlay">
-                        <span>OLHARES</span>
-                        <h3>Às vezes, um lugar comum só precisa de um novo olhar.</h3>
-                    <small class="foto-abrir">ABRIR ↗</small>
-                    </div>
-                </article>
-
-                <article class="foto-card reveal" tabindex="0" role="button" aria-label="Ampliar fotografia 2" data-category="detalhes">
-                    <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-2.jpeg" alt="Fotografia de ambiente urbano">
-                    <div class="foto-overlay">
-                        <span>DETALHES</span>
-                        <h3>São os detalhes que fazem um momento se tornar único.</h3>
-                    <small class="foto-abrir">ABRIR ↗</small>
-                    </div>
-                </article>
-
-                <article class="foto-card reveal" tabindex="0" role="button" aria-label="Ampliar fotografia 3" data-category="perspectivas">
-                    <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-3.jpeg" alt="Fotografia de ambiente interno">
-                    <div class="foto-overlay">
-                        <span>PERSPECTIVAS</span>
-                        <h3>Cada cenário pode contar uma história diferente.</h3>
-                    <small class="foto-abrir">ABRIR ↗</small>
-                    </div>
-                </article>
-
-                <article class="foto-card reveal" tabindex="0" role="button" aria-label="Ampliar fotografia 4" data-category="cenarios">
-                    <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-4.jpeg" alt="Fotografia de arquitetura">
-                    <div class="foto-overlay">
-                        <span>CENÁRIOS</span>
-                        <h3>Lugares mudam. Imagens fazem permanecer.</h3>
-                    <small class="foto-abrir">ABRIR ↗</small>
-                    </div>
-                </article>
-
-                <article class="foto-card reveal" tabindex="0" role="button" aria-label="Ampliar fotografia 5" data-category="detalhes">
-                    <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-5.jpeg" alt="Fotografia de cores e detalhes">
-                    <div class="foto-overlay">
-                        <span>CORES</span>
-                        <h3>Cada cor, luz e detalhe pode transformar uma imagem.</h3>
-                    <small class="foto-abrir">ABRIR ↗</small>
-                    </div>
-                </article>
-
-                <article class="foto-card reveal" tabindex="0" role="button" aria-label="Ampliar fotografia 6" data-category="momentos">
-                    <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-6.jpeg" alt="Fotografia noturna">
-                    <div class="foto-overlay">
-                        <span>MOMENTOS</span>
-                        <h3>O tempo passa. O registro permanece.</h3>
-                    <small class="foto-abrir">ABRIR ↗</small>
-                    </div>
-                </article>
-
-            </div>
-
-            <div class="portfolio-especial">
-
-                <div class="especial-texto reveal">
-                    <span>INSTANTES</span>
-                    <h2>Alguns momentos passam em segundos.</h2>
-                    <p>
-                        Mas uma imagem pode fazer com que aquele
-                        instante continue existindo por muitos anos.
-                    </p>
-                </div>
-
-                <div class="especial-foto reveal">
-                    <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-7.PNG" alt="Fotografia de avião em voo">
-                </div>
-
-            </div>
-
-            <div class="portfolio-chamada reveal">
-
-                <span>SUA HISTÓRIA PODE SER A PRÓXIMA</span>
-
-                <h2>
-                    Imagens que não apenas mostram,
-                    mas fazem sentir.
-                </h2>
-
-                <p>
-                    Pessoas, empresas, lugares e momentos carregam histórias.
-                    O objetivo é transformá-las em fotografias e filmes autênticos,
-                    capazes de continuar fazendo sentido com o tempo.
-                </p>
-
-                <a href="#contato" class="btn btn-branco">
-                    Quero contar minha história
-                </a>
-
-            </div>
-
-        </section>
-
-        <section id="sobre" class="sobre-fotografo">
-
-            <div class="sobre-foto reveal">
-                <div class="foto-moldura">
-                    <img
-                        loading="lazy"
-                        decoding="async"
-                        src="imagens/fotografo.PNG"
-                        alt="Guilherme Kauê - Fotógrafo e filmmaker"
-                        class="foto-fotografo"
-                    >
-                    <span class="foto-numero">01</span>
-                </div>
-            </div>
-
-            <div class="sobre-texto reveal">
-
-                <span class="mini-titulo">POR TRÁS DAS LENTES</span>
-
-                <h2>
-                    Muito prazer,<br>
-                    eu sou Guilherme.
-                </h2>
-
-                <p class="sobre-destaque">
-                    Especializado em fotografias e vídeos institucionais
-                    que valorizam pessoas, marcas e negócios.
-                </p>
-
-                <p>
-                    Acredito que grandes fotografias não apenas registram
-                    um instante, mas preservam sentimentos, histórias e conexões.
-                </p>
-
-                <p>
-                    Meu trabalho é unir paixão, sensibilidade e autenticidade
-                    para continuar fazendo sentido muitos anos depois.
-                </p>
-
-                <div class="assinatura-fotografo">
-                    <div class="linha-assinatura"></div>
-                    <div>
-                        <strong>Guilherme Kauê</strong>
-                        <span>Fotógrafo & Filmmaker • by.Guilhermefilms</span>
-                    </div>
-                </div>
-
-                <a href="#contato" class="sobre-link">
-                    VAMOS CRIAR ALGO JUNTOS
-                    <span>→</span>
-                </a>
-
-            </div>
-
-        </section>
-
-        <section id="servicos" class="secao servicos">
-
-            <div class="titulo-secao titulo-escuro reveal">
-                <span>POSSIBILIDADES</span>
-                <h2>Serviços</h2>
-                <p>
-                    Produções pensadas para valorizar histórias,
-                    pessoas, marcas e negócios através de fotografia e vídeo.
-                </p>
-            </div>
-
-            <div class="servicos-grid">
-
-                <article class="servico-card reveal">
-                    <span class="servico-numero">01</span>
-                    <h3>Fotografia</h3>
-                    <p>
-                        Ensaios, retratos e registros criativos
-                        em ambientes internos ou externos.
-                    </p>
-                </article>
-
-                <article class="servico-card reveal">
-                    <span class="servico-numero">02</span>
-                    <h3>Vídeos</h3>
-                    <p>
-                        Produções audiovisuais para contar histórias,
-                        apresentar ideias e criar conexão com o público.
-                    </p>
-                </article>
-
-                <article class="servico-card reveal">
-                    <span class="servico-numero">03</span>
-                    <h3>Institucional</h3>
-                    <p>
-                        Fotografias e vídeos que valorizam profissionais,
-                        equipes, empresas, marcas e negócios.
-                    </p>
-                </article>
-
-                <article class="servico-card reveal">
-                    <span class="servico-numero">04</span>
-                    <h3>Marcas e produtos</h3>
-                    <p>
-                        Conteúdo visual para produtos, redes sociais,
-                        campanhas e materiais de divulgação.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-        <section class="destaque">
-            <div class="destaque-conteudo reveal">
-                <span>IMAGENS TAMBÉM CONTAM HISTÓRIAS</span>
-                <h2>
-                    O tempo muda tudo.<br>
-                    Um bom registro faz permanecer.
-                </h2>
-            </div>
-        </section>
-
-        <section id="contato" class="contato">
-
-            <div class="contato-conteudo reveal">
-
-                <span class="mini-titulo">VAMOS CRIAR ALGO?</span>
-
-                <h2>
-                    Sua próxima história
-                    pode começar aqui.
-                </h2>
-
-                <p>
-                    Entre em contato para conversar sobre sua ideia,
-                    consultar disponibilidade ou solicitar um orçamento personalizado.
-                </p>
-
-                <div class="contato-grid">
-
-                    <a
-                        href="https://www.instagram.com/by.guilhermefilms/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contato-item"
-                    >
-                        <span>INSTAGRAM</span>
-                        <strong>@by.guilhermefilms</strong>
-                        <b>↗</b>
-                    </a>
-
-                    <a
-                        href="https://wa.me/554199784888"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contato-item"
-                    >
-                        <span>WHATSAPP</span>
-                        <strong>(41) 99784-8888</strong>
-                        <b>↗</b>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <a href="#inicio" class="footer-logo">by.Guilhermefilms</a>
-        <p>Fotografia • Filmes • Histórias</p>
-        <span>© 2026 by.Guilhermefilms — Todos os direitos reservados.</span>
-        <small class="footer-edicao"></small>
-    </footer>
-
-    <a
-        class="whatsapp-flutuante"
-        href="https://wa.me/554199784888"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Conversar pelo WhatsApp"
-    >
-        <span>WHATSAPP</span>
-        <strong>↗</strong>
-    </a>
-
-    <div class="lightbox" aria-hidden="true">
-
-        <button class="lightbox-fechar" type="button" aria-label="Fechar imagem">
-            ×
-        </button>
-
-        <button class="lightbox-nav lightbox-anterior" type="button" aria-label="Imagem anterior">
-            ←
-        </button>
-
-        <div class="lightbox-conteudo">
-            <img class="lightbox-imagem" src="" alt="">
-
-            <div class="lightbox-legenda">
-                <div class="lightbox-info">
-                    <span class="lightbox-categoria"></span>
-                    <p class="lightbox-texto"></p>
-                </div>
-
-                <div class="lightbox-meta">
-                    <span class="lightbox-contador"></span>
-                    <span class="lightbox-progresso"><i></i></span>
-                </div>
-            </div>
+        <div class="portfolio-filtros reveal" aria-label="Filtros do portfólio">
+          <button class="filtro-btn ativo" type="button" data-filter="todos">Todos</button>
+          <button class="filtro-btn" type="button" data-filter="olhares">Olhares</button>
+          <button class="filtro-btn" type="button" data-filter="detalhes">Detalhes</button>
+          <button class="filtro-btn" type="button" data-filter="perspectivas">Perspectivas</button>
+          <button class="filtro-btn" type="button" data-filter="cenarios">Cenários</button>
+          <button class="filtro-btn" type="button" data-filter="momentos">Momentos</button>
         </div>
+      </div>
 
-        <button class="lightbox-nav lightbox-proxima" type="button" aria-label="Próxima imagem">
-            →
-        </button>
+      <div class="galeria">
+        <article class="foto-card card-1 reveal" tabindex="0" role="button" aria-label="Ampliar fotografia 1" data-category="olhares">
+          <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-1.jpeg" alt="Fotografia urbana noturna">
+          <div class="foto-overlay"><span>OLHARES</span><h3>Às vezes, um lugar comum só precisa de um novo olhar.</h3><small class="foto-abrir">ABRIR ↗</small></div>
+        </article>
+        <article class="foto-card card-2 reveal" tabindex="0" role="button" aria-label="Ampliar fotografia 2" data-category="detalhes">
+          <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-2.jpeg" alt="Fotografia de ambiente urbano">
+          <div class="foto-overlay"><span>DETALHES</span><h3>São os detalhes que fazem um momento se tornar único.</h3><small class="foto-abrir">ABRIR ↗</small></div>
+        </article>
+        <article class="foto-card card-3 reveal" tabindex="0" role="button" aria-label="Ampliar fotografia 3" data-category="perspectivas">
+          <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-3.jpeg" alt="Fotografia de ambiente interno">
+          <div class="foto-overlay"><span>PERSPECTIVAS</span><h3>Cada cenário pode contar uma história diferente.</h3><small class="foto-abrir">ABRIR ↗</small></div>
+        </article>
+        <article class="foto-card card-4 reveal" tabindex="0" role="button" aria-label="Ampliar fotografia 4" data-category="cenarios">
+          <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-4.jpeg" alt="Fotografia de arquitetura">
+          <div class="foto-overlay"><span>CENÁRIOS</span><h3>Lugares mudam. Imagens fazem permanecer.</h3><small class="foto-abrir">ABRIR ↗</small></div>
+        </article>
+        <article class="foto-card card-5 reveal" tabindex="0" role="button" aria-label="Ampliar fotografia 5" data-category="detalhes">
+          <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-5.jpeg" alt="Fotografia de cores e detalhes">
+          <div class="foto-overlay"><span>CORES</span><h3>Cada cor, luz e detalhe pode transformar uma imagem.</h3><small class="foto-abrir">ABRIR ↗</small></div>
+        </article>
+        <article class="foto-card card-6 reveal" tabindex="0" role="button" aria-label="Ampliar fotografia 6" data-category="momentos">
+          <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-6.jpeg" alt="Fotografia noturna">
+          <div class="foto-overlay"><span>MOMENTOS</span><h3>O tempo passa. O registro permanece.</h3><small class="foto-abrir">ABRIR ↗</small></div>
+        </article>
+      </div>
+    </section>
 
+    <section class="impacto" aria-label="Fotografia em destaque">
+      <div class="impacto-inner">
+        <div class="impacto-copy reveal"><h2>UMA HISTÓRIA<br>PODE DURAR<br>APENAS UM<br><em>INSTANTE.</em></h2><i></i></div>
+        <div class="impacto-foto reveal">
+          <img loading="lazy" decoding="async" src="imagens/portifolio/Portifolio-7.PNG" alt="Fotografia de avião em voo">
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre-servicos">
+      <div class="sobre-bloco reveal">
+        <div class="section-number"><span>02</span><i></i></div>
+        <div class="sobre-foto"><img loading="lazy" decoding="async" src="imagens/fotografo.PNG" alt="Guilherme Kauê — fotógrafo e filmmaker"></div>
+        <div class="sobre-texto">
+          <span class="eyebrow">SOBRE</span>
+          <h2>Guilherme Kauê</h2>
+          <h3>Fotógrafo &amp; Filmmaker</h3>
+          <p>Acredito que grandes fotografias não apenas registram um instante, mas preservam sentimentos, histórias e conexões.</p>
+          <p>Meu trabalho é unir paixão, sensibilidade e autenticidade para criar registros que continuem fazendo sentido com o tempo.</p>
+          <a href="https://www.instagram.com/by.guilhermefilms/" target="_blank" rel="noopener noreferrer">INSTAGRAM <span>↗</span></a>
+        </div>
+      </div>
+
+      <div id="servicos" class="servicos-bloco reveal">
+        <div class="servicos-cabecalho"><div class="section-number"><span>03</span><i></i></div><span class="eyebrow">O QUE FAÇO</span></div>
+        <div class="servicos-lista">
+          <article><span>01</span><h3>FOTOGRAFIA</h3><p>Ensaios, retratos e registros criativos.</p><b>→</b></article>
+          <article><span>02</span><h3>VÍDEOS</h3><p>Produções audiovisuais para contar histórias.</p><b>→</b></article>
+          <article><span>03</span><h3>INSTITUCIONAL</h3><p>Conteúdo visual para profissionais e empresas.</p><b>→</b></article>
+          <article><span>04</span><h3>MARCAS E PRODUTOS</h3><p>Imagens para campanhas, produtos e redes sociais.</p><b>→</b></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <div class="contato-bg" aria-hidden="true"></div>
+      <div class="contato-shade" aria-hidden="true"></div>
+      <div class="contato-inner reveal">
+        <div class="contato-copy"><span class="eyebrow">04 — CONTATO</span><h2>TEM UMA<br>HISTÓRIA<br>PARA CONTAR?</h2><p>Vamos criar algo juntos.</p></div>
+        <a class="contato-acao contato-whatsapp" href="https://wa.me/554199784888" target="_blank" rel="noopener noreferrer" aria-label="Falar com Guilherme pelo WhatsApp">
+          <span class="contato-acao-icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+              <path d="M12.04 2C6.5 2 2 6.48 2 12c0 1.76.46 3.48 1.33 5L2 22l5.13-1.34A10.08 10.08 0 0 0 12.04 22C17.57 22 22 17.52 22 12S17.57 2 12.04 2Zm0 18.18a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.04.8.81-2.95-.2-.3A8.15 8.15 0 0 1 3.82 12c0-4.5 3.69-8.18 8.22-8.18A8.18 8.18 0 0 1 20.22 12c0 4.5-3.66 8.18-8.18 8.18Zm4.49-6.13c-.25-.12-1.46-.72-1.69-.8-.23-.08-.4-.12-.56.12-.17.25-.65.8-.8.97-.15.17-.3.18-.55.06-.25-.12-1.05-.38-2-1.23a7.53 7.53 0 0 1-1.38-1.72c-.15-.25-.02-.38.1-.5.11-.1.25-.27.37-.4.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.09s.9 2.42 1.02 2.59c.13.17 1.76 2.69 4.27 3.77.6.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.11-.23-.17-.48-.3Z"/>
+            </svg>
+          </span>
+          <span class="contato-acao-texto"><small>CONTATO DIRETO</small><strong>Falar no WhatsApp</strong></span>
+          <span class="contato-acao-seta" aria-hidden="true">↗</span>
+        </a>
+        <a class="contato-acao contato-instagram" href="https://www.instagram.com/by.guilhermefilms/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de by.Guilhermefilms">
+          <span class="contato-acao-icone contato-acao-icone-instagram" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+              <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/>
+            </svg>
+          </span>
+          <span class="contato-acao-texto"><small>INSTAGRAM</small><strong>@by.guilhermefilms</strong></span>
+          <span class="contato-acao-seta" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#inicio" class="footer-logo">by.Guilhermefilms</a>
+    <span>© 2026. TODOS OS DIREITOS RESERVADOS.</span>
+  </footer>
+
+  <a class="whatsapp-flutuante" href="https://wa.me/554199784888" target="_blank" rel="noopener noreferrer" aria-label="Conversar pelo WhatsApp"><span>WHATSAPP</span><strong>↗</strong></a>
+
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox-fechar" type="button" aria-label="Fechar imagem">×</button>
+    <button class="lightbox-nav lightbox-anterior" type="button" aria-label="Imagem anterior">←</button>
+    <div class="lightbox-conteudo">
+      <img class="lightbox-imagem" src="" alt="">
+      <div class="lightbox-legenda"><div class="lightbox-info"><span class="lightbox-categoria"></span><p class="lightbox-texto"></p></div><div class="lightbox-meta"><span class="lightbox-contador"></span><span class="lightbox-progresso"><i></i></span></div></div>
     </div>
-
-    <script src="JS/script.js"></script>
-
+    <button class="lightbox-nav lightbox-proxima" type="button" aria-label="Próxima imagem">→</button>
+  </div>
+  <script src="JS/script.js"></script>
 </body>
 </html>
