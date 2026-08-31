@@ -252,14 +252,50 @@ sections.forEach(section => sectionObserver.observe(section));
 const filtros = document.querySelectorAll(".filtro-btn");
 const cards = [...document.querySelectorAll(".foto-card")];
 
+const galeria = document.querySelector(".galeria");
+
 function aplicarFiltro(filtro) {
+
+    const filtrando = filtro !== "todos";
+
+    galeria.classList.toggle(
+        "modo-filtrado",
+        filtrando
+    );
+
+    let visiveis = 0;
 
     cards.forEach(card => {
 
-        const categoria = card.dataset.category;
+        let categoria = card.dataset.category;
+
+        if (!categoria) {
+
+            const rotulo =
+                card.querySelector(".foto-overlay span")
+                ?.textContent
+                ?.trim()
+                ?.toLowerCase()
+                ?.normalize("NFD")
+                ?.replace(/[\u0300-\u036f]/g, "");
+
+            const mapaCategorias = {
+                "olhares": "olhares",
+                "detalhes": "detalhes",
+                "perspectivas": "perspectivas",
+                "cenarios": "cenarios",
+                "cores": "detalhes",
+                "momentos": "momentos"
+            };
+
+            categoria =
+                mapaCategorias[rotulo]
+                || "";
+
+        }
 
         const deveMostrar =
-            filtro === "todos"
+            !filtrando
             || categoria === filtro;
 
         card.classList.toggle(
@@ -269,15 +305,49 @@ function aplicarFiltro(filtro) {
 
         if (deveMostrar) {
 
-            card.classList.remove("animar-filtro");
+            visiveis += 1;
+
+            card.classList.remove(
+                "animar-filtro"
+            );
 
             requestAnimationFrame(() => {
-                card.classList.add("animar-filtro");
+                card.classList.add(
+                    "animar-filtro"
+                );
             });
 
         }
 
     });
+
+    galeria.dataset.visiveis =
+        String(visiveis);
+
+    /*
+       Ao filtrar, a altura da página muda bastante.
+       Reposicionamos a tela no começo da galeria para
+       o visitante enxergar imediatamente as fotos.
+    */
+    if (filtrando) {
+
+        window.setTimeout(() => {
+
+            const topo =
+                galeria.getBoundingClientRect().top
+                + window.scrollY
+                - 115;
+
+            window.scrollTo({
+                top: topo,
+                behavior: prefereMovimentoReduzido
+                    ? "auto"
+                    : "smooth"
+            });
+
+        }, 80);
+
+    }
 
 }
 
